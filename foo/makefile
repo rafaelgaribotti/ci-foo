@@ -41,4 +41,4 @@ clean:
 	rm -f $(TARGET)
 
 ci: CFLAGS += -Werror
-ci: clean compile run
+ci: compile
