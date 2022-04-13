@@ -35,10 +35,10 @@ compile:
 	$(GCC_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES) -o $(TARGET)
 
 run:
-	-./$(TARGET) -v
+	./$(TARGET)
 
 clean:
 	rm -f $(TARGET)
 
-ci: CFLAGS += -Werror
+#ci: CFLAGS += -Werror
 ci: all
