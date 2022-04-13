@@ -35,7 +35,7 @@ compile:
 	$(GCC_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES) -o $(TARGET)
 
 run:
-	./$(TARGET)
+	-./$(TARGET) -v
 
 clean:
 	rm -f $(TARGET)
